@@ -64,8 +64,8 @@
             from { opacity: 0; transform: scale(0.95); }
             to { opacity: 1; transform: scale(1); }
         }
-        .lead-modal-pós[aria-hidden="false"] { display: flex !important; }
-        .lead-modal-pós[aria-hidden="true"] { display: none !important; }
+        .lead-modal-pos[aria-hidden="false"] { display: flex !important; }
+        .lead-modal-pos[aria-hidden="true"] { display: none !important; }
 
         /* ========== Animações de Entrada (Scroll) ========== */
         [data-animate] {
@@ -117,7 +117,7 @@
         </a>
     </div>
 
-    <header id="hero" class="relative text-white py-24 md:py-32 px-4 md:px-6 text-center overflow-hidden" style="background-image: linear-gradient(to bottom, rgba(19, 19, 15, 0.8), rgba(19, 19, 15, 0.95), rgba(19, 19, 15, 1)), url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1920&auto=format&fit=crop'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <header id="hero" class="relative text-white py-24 md:py-32 px-4 md:px-6 text-center overflow-hidden" style="background-image: linear-gradient(to bottom, rgba(19, 19, 15, 0.8), rgba(19, 19, 15, 0.95), rgba(19, 19, 15, 1)), url('img/bgHero.webp'); background-size: cover; background-position: center; background-attachment: fixed;">
         
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] md:w-[800px] h-[600px] md:h-[800px] bg-brand/15 blur-[120px] md:blur-[150px] rounded-full pointer-events-none"></div>
 
@@ -130,7 +130,7 @@
                 <span class="text-[10px] md:text-xs font-bold text-zinc-300 tracking-widest uppercase">Turma Confirmada</span>
             </div>
 
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-[1.1] mb-6 drop-shadow-2xl">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-[1.1] mb-6 drop-shadow-2xl uppercase">
                 Pós-graduação em <br class="hidden md:block">
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#05B147] to-[#C6DF48]">Treinamento Feminino</span>
             </h1>
@@ -499,61 +499,6 @@
         </div>
     </section>
 
-    <section id="professores" class="py-20 md:py-32 px-4 md:px-6 bg-zinc-950 relative overflow-hidden border-t border-zinc-900">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[400px] bg-brand/5 blur-[120px] pointer-events-none"></div>
-
-        <div class="max-w-5xl mx-auto relative z-10">
-            <div class="text-center mb-16 md:mb-24">
-                <span class="inline-block bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6 shadow-sm" data-animate>
-                    A Elite da Educação Física
-                </span>
-                <h3 class="text-3xl md:text-5xl lg:text-6xl font-black mb-4 md:mb-6 text-white tracking-tight" data-animate data-animate-delay="1">
-                    Profissionais <span class="text-brand">Especializados</span>
-                </h3>
-                <p class="text-zinc-400 max-w-2xl mx-auto text-base md:text-xl font-light" data-animate data-animate-delay="2">
-                    Aprenda com quem está no "campo de batalha". Nossa equipe de especialistas vai te guiar no caminho do sucesso.
-                </p>
-            </div>
-            
-            <div class="space-y-12 md:space-y-20">
-                
-                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16 group" data-animate="up">
-                    <div class="w-full md:w-2/5 shrink-0 relative rounded-3xl overflow-hidden aspect-[4/5] border border-zinc-800 shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop" alt="Rafa Lund" class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent opacity-90"></div>
-                        <div class="absolute bottom-6 left-6 bg-purple-600 text-white text-[10px] md:text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">
-                            Mestre
-                        </div>
-                    </div>
-                    
-                    <div class="w-full md:w-3/5 flex flex-col justify-center text-center md:text-left">
-                        <p class="text-purple-400 text-xs md:text-sm font-bold tracking-widest uppercase mb-2 drop-shadow-md">Saúde da Mulher</p>
-                        <h4 class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">Rafa Lund</h4>
-                        
-                        <p class="text-zinc-400 text-base md:text-lg leading-relaxed font-light mb-8">
-                            Especialista em saúde da mulher. Domine na prática os conhecimentos essenciais do atendimento feminino, desde a fisiologia hormonal até os métodos avançados de emagrecimento e hipertrofia voltados para esse público.
-                        </p>
-                        
-                        <div class="flex items-center justify-center md:justify-start gap-4">
-                            <a href="#" class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-purple-400 hover:border-purple-500/50 transition-all duration-300">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                            </a>
-                            <span class="text-zinc-300 font-medium text-sm">@rafalund</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            
-            <div class="mt-16 md:mt-24 text-center border-t border-zinc-800/50 pt-12">
-                <p class="text-zinc-500 font-light text-sm md:text-base max-w-2xl mx-auto">
-                    A Pós-graduação conta com um corpo docente completo, reunindo mais de 15 doutores, mestres e especialistas em educação física, fisiologia e reabilitação.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
     <section id="cta-final" class="py-20 md:py-32 px-4 md:px-6 bg-zinc-950 relative overflow-hidden border-t border-zinc-900">
         <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:20px_20px] md:bg-[size:40px_40px] pointer-events-none"></div>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-brand/10 blur-[100px] md:blur-[150px] rounded-full pointer-events-none"></div>
@@ -636,7 +581,6 @@
                     <ul class="space-y-2 md:space-y-3 text-xs md:text-sm font-medium">
                         <li><a href="#metodologia" class="hover:text-brand transition-all duration-300">A Metodologia</a></li>
                         <li><a href="#curriculo" class="hover:text-brand transition-all duration-300">Grade Curricular</a></li>
-                        <li><a href="#professores" class="hover:text-brand transition-all duration-300">Corpo Docente</a></li>
                     </ul>
                 </div>
                 <div>
@@ -672,11 +616,12 @@
         </div>
     </footer>
 
-    <div id="lead-modal-SM7" class="lead-modal-pós fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/70 backdrop-blur-sm" aria-hidden="true">
-        <div class="relative rounded-2xl shadow-2xl max-w-md w-full p-8 animate-[fadeIn_0.3s_ease-out] bg-[#120a17] border border-[#D946EF]/30">
-            <button type="button" data-modal-close class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/5 hover:bg-[#D946EF]/20 flex items-center justify-center text-gray-400 hover:text-white transition" aria-label="Fechar"><i class="fas fa-times"></i></button>
-            <h3 class="text-2xl font-bold text-white mb-1">Preencha seus dados</h3>
-            <p class="text-sm text-gray-400 mb-6">Para liberar seu acesso à matrícula.</p>
+    <div id="lead-modal-SM7" class="lead-modal-pos fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md" aria-hidden="true">
+        <div class="relative rounded-3xl shadow-[0_0_50px_rgba(6,178,71,0.2)] max-w-md w-full p-8 animate-[fadeIn_0.3s_ease-out] bg-zinc-950 border border-brand/40">
+            <button type="button" data-modal-close class="absolute top-4 right-4 w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 hover:bg-brand hover:border-brand flex items-center justify-center text-zinc-400 hover:text-zinc-950 transition-all"><i class="fas fa-times"></i></button>
+            <h3 class="text-2xl font-black text-white mb-2">Preencha seus dados</h3>
+            <p class="text-sm text-zinc-400 mb-8 font-light">Para liberar seu acesso à matrícula com o desconto exclusivo da turma 2026.</p>
+            
             <form id="form_SM7" class="space-y-4" data-product="SM7">
                 <input type="hidden" name="utm_source" class="lead-utm" data-utm="utm_source" value="">
                 <input type="hidden" name="utm_term" class="lead-utm" data-utm="utm_term" value="">
@@ -684,10 +629,27 @@
                 <input type="hidden" name="utm_medium" class="lead-utm" data-utm="utm_medium" value="">
                 <input type="hidden" name="utm_content" class="lead-utm" data-utm="utm_content" value="">
                 <input type="hidden" name="url" class="lead-utm" data-utm="url" value="">
-                <div><label class="block text-sm font-medium text-gray-300 mb-1">Nome</label><input type="text" name="nome" required placeholder="Seu nome completo" class="lead-input w-full px-4 py-3 rounded-lg bg-[#0a050d] border border-white/10 text-white placeholder-gray-500 focus:border-[#D946EF] focus:ring-1 focus:ring-[#D946EF] outline-none transition"></div>
-                <div><label class="block text-sm font-medium text-gray-300 mb-1">Email</label><input type="email" name="email" required placeholder="seu@email.com" class="lead-input w-full px-4 py-3 rounded-lg bg-[#0a050d] border border-white/10 text-white placeholder-gray-500 focus:border-[#D946EF] focus:ring-1 focus:ring-[#D946EF] outline-none transition"></div>
-                <div><label class="block text-sm font-medium text-gray-300 mb-1">Telefone</label><div class="flex rounded-lg overflow-hidden border border-white/10 focus-within:border-[#D946EF] focus-within:ring-1 focus-within:ring-[#D946EF] bg-[#0a050d]"><span class="inline-flex items-center px-4 py-3 bg-[#D946EF] text-white font-bold select-none shrink-0">+55</span><input type="tel" name="telefone" required placeholder="11 99999-9999" inputmode="numeric" pattern="[0-9\s]*" maxlength="15" class="lead-input lead-phone flex-1 px-4 py-3 bg-transparent text-white placeholder-gray-500 outline-none min-w-0"></div><p class="text-gray-400 text-xs mt-1">DDD + número (apenas números)</p><p class="lead-phone-err text-red-400 text-xs mt-1 hidden">Informe o DDD e o número.</p></div>
-                <button type="submit" class="w-full bg-[#D946EF] text-white font-bold py-4 rounded-xl uppercase tracking-widest hover:shadow-[0_0_20px_rgba(217,70,239,0.4)] transition mt-2">GARANTIR VAGA</button>
+                
+                <div>
+                    <label class="block text-sm font-medium text-zinc-300 mb-1.5">Nome completo</label>
+                    <input type="text" name="nome" required placeholder="Seu nome" class="w-full px-4 py-3.5 rounded-xl bg-zinc-900 border border-zinc-800 text-white placeholder-zinc-600 focus:border-brand focus:ring-1 focus:ring-brand outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-zinc-300 mb-1.5">E-mail principal</label>
+                    <input type="email" name="email" required placeholder="seu@email.com" class="w-full px-4 py-3.5 rounded-xl bg-zinc-900 border border-zinc-800 text-white placeholder-zinc-600 focus:border-brand focus:ring-1 focus:ring-brand outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-zinc-300 mb-1.5">WhatsApp</label>
+                    <div class="flex rounded-xl overflow-hidden border border-zinc-800 focus-within:border-brand focus-within:ring-1 focus-within:ring-brand bg-zinc-900 transition">
+                        <span class="inline-flex items-center px-4 py-3.5 bg-brand text-zinc-950 font-black select-none shrink-0">+55</span>
+                        <input type="tel" name="telefone" required placeholder="11 99999-9999" inputmode="numeric" maxlength="15" class="lead-phone flex-1 px-4 py-3.5 bg-transparent text-white placeholder-zinc-600 outline-none min-w-0">
+                    </div>
+                    <p class="lead-phone-err text-red-400 text-xs mt-2 hidden font-medium">Informe o DDD e o número completo.</p>
+                </div>
+                
+                <button type="submit" class="w-full bg-brand text-zinc-950 font-black py-4 mt-4 rounded-xl uppercase tracking-widest hover:bg-brand-hover shadow-[0_0_20px_rgba(6,178,71,0.4)] transition transform hover:-translate-y-1">
+                    Avançar para Pagamento
+                </button>
             </form>
         </div>
     </div>
@@ -739,7 +701,7 @@
             }
             
             function getVisibleModal() {
-                var modals = document.querySelectorAll('.lead-modal-pós');
+                var modals = document.querySelectorAll('.lead-modal-pos');
                 for (var i = 0; i < modals.length; i++) { 
                     if (modals[i].getAttribute('aria-hidden') === 'false') return modals[i]; 
                 }
@@ -749,7 +711,7 @@
             function openModal(product) {
                 if (!product || !PRODUCT_CONFIG[product]) return;
                 
-                document.querySelectorAll('.lead-modal-pós').forEach(function (m) { 
+                document.querySelectorAll('.lead-modal-pos').forEach(function (m) { 
                     m.setAttribute('aria-hidden', 'true'); 
                     m.classList.add('hidden'); 
                     m.classList.remove('flex'); 
@@ -796,11 +758,11 @@
             
             document.querySelectorAll('[data-modal-close]').forEach(function (btn) {
                 btn.addEventListener('click', function () { 
-                    closeModal(btn.closest('.lead-modal-pós')); 
+                    closeModal(btn.closest('.lead-modal-pos')); 
                 });
             });
             
-            document.querySelectorAll('.lead-modal-pós').forEach(function (modal) {
+            document.querySelectorAll('.lead-modal-pos').forEach(function (modal) {
                 modal.addEventListener('click', function (e) { 
                     if (e.target === modal) closeModal(modal); 
                 });
